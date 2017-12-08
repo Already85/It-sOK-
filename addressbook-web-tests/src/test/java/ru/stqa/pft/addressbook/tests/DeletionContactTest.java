@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.tests;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -8,9 +8,9 @@ public class DeletionContactTest extends TestBase {
 
   @Test
   public void testDeletionContact() {
-    wd.findElement(By.linkText("home")).click();
-    selectContact();
-    deleteSelectedContacts();
+    app.wd.findElement(By.linkText("home")).click();
+    app.selectContact();
+    app.deleteSelectedContacts();
 
   }
 
