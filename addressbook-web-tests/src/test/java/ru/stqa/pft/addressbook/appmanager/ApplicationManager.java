@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.BrowserType;
 
 import java.util.Objects;
@@ -39,16 +40,18 @@ public class ApplicationManager {
     } else if (browser.equals(BrowserType.IE)) {
       wd=new InternetExplorerDriver();
     } else if (browser.equals(BrowserType.OPERA)) {
-      wd=new OperaDriver();
+      OperaOptions options=new OperaOptions();
+      options.setBinary("c:/Program Files/Opera/launcher.exe");
+      wd=new OperaDriver(options);}
+      wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+      wd.get("http://localhost/addressbook/group.php");
+      groupHelper=new GroupHelper(wd);
+      contactHelper=new ContactHelper(wd);
+      navigationHelper=new NavigationHelper(wd);
+      sessionHelper=new SessionHelper(wd);
+      sessionHelper.login("admin", "secret");
     }
-    wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    wd.get("http://localhost/addressbook/group.php");
-    groupHelper=new GroupHelper(wd);
-    contactHelper=new ContactHelper(wd);
-    navigationHelper=new NavigationHelper(wd);
-    sessionHelper=new SessionHelper(wd);
-    sessionHelper.login("admin", "secret");
-  }
+
 
   private void login(String username, String password) {
     wd.findElement(By.name("user")).click();
