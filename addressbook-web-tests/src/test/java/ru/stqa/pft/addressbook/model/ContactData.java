@@ -33,6 +33,7 @@ public class ContactData {
     this.notes = notes;
   }
 
+
   public String getFirstname() {
     return firstname;
   }
