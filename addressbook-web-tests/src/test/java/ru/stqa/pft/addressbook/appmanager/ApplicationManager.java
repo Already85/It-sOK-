@@ -1,22 +1,16 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.BrowserType;
 
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
-
-import static org.openqa.selenium.remote.BrowserType.OPERA;
 
 public class ApplicationManager {
 
@@ -44,7 +38,7 @@ public class ApplicationManager {
       options.setBinary("c:/Program Files/Opera/launcher.exe");
       wd=new OperaDriver(options);}
       wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-      wd.get("http://localhost/addressbook/group.php");
+      wd.get("http://localhost/addressbook");
       groupHelper=new GroupHelper(wd);
       contactHelper=new ContactHelper(wd);
       navigationHelper=new NavigationHelper(wd);

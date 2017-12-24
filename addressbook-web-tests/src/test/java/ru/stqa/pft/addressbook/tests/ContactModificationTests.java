@@ -1,8 +1,11 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
+
+import java.util.HashSet;
+import java.util.List;
 
 public class ContactModificationTests extends TestBase {
 
@@ -12,12 +15,18 @@ public class ContactModificationTests extends TestBase {
     app.getNavigationHelper().goToHomePage();
     if (! app.getContactHelper().isThereAContact()) {
       app.getNavigationHelper().goToAddNew();
-      app.getContactHelper().createContact(new ContactData("Alexandr", "A.S.", "Matryuk", "Squzet", "Snickers", "Leningradskaya oblast`", "6", "8888", "4444", "0000", "1990", "5", "6", "7"));
+      app.getContactHelper().createContact(new ContactData("Alexandr", "Sergeevich", "Matryuk", "Kaledo", null, "Mars", null, null, null, null, null, null, null, null));
     }
-    app.getNavigationHelper().goToHomePage();
-    app.getContactHelper().initContactModification2();
-    app.getContactHelper().clickModify();
-    app.getContactHelper().fillContactForm(new ContactData("Pavel", "A.S.", "Malcev", "Squzet", "Snickers", "Leningradskaya oblast`", "6", "8888", "4444", "0000", "1990", "5", "6", "7"));
+      List<ContactData> before = app.getContactHelper().getContactList();
+    app.getContactHelper().initContactModification();
+    ContactData contact = new ContactData(before.get(0).getId(),"Pavel", "Nestorovich", "Malcev", "Kaledo", null, "Mars", null, null, null, null, null, null, null, null);
+    app.getContactHelper().fillContactForm(contact);
     app.getContactHelper().submitContactModification();
+    List<ContactData> after = app.getContactHelper().getContactList();
+    Assert.assertEquals(after.size(),before.size());
+
+    before.remove(0);
+    before.add(contact);
+    Assert.assertEquals(new HashSet<Object>(before),new HashSet<Object>(after));
   }
 }
