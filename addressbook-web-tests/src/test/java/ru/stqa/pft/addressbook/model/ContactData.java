@@ -7,31 +7,101 @@ public class ContactData {
     return "ContactData{" + "id='" + id + '\'' + ", lastname='" + lastname + '\'' + ", address='" + address + '\'' +'}';
   }
 
-  public void setId(int id) {
+  public ContactData withId(int id)
+  {
     this.id=id;
+  return this;
   }
 
+  public ContactData withAyear(String ayear) {
+    this.ayear=ayear;
+    return this;
+  }
 
-  private int id;
-  private final String firstname;
-  private final String middlename;
-  private final String lastname;
-  private final String nickname;
-  private final String company;
-  private final String address;
-  private final String home;
-  private final String mobile;
-  private final String work;
-  private final String fax;
-  private final String ayear;
-  private final String address2;
-  private final String phone2;
-  private final String notes;
+  public ContactData withFirstname(String firstname) {
+    this.firstname=firstname;
+    return this;
+  }
+
+  public ContactData withMiddlename(String middlename) {
+    this.middlename=middlename;
+    return this;
+  }
+
+  public ContactData withLastname(String lastname) {
+    this.lastname=lastname;
+    return this;
+  }
+
+  public ContactData withNickname(String nickname) {
+    this.nickname=nickname;
+    return this;
+  }
+
+  public ContactData withCompany(String company) {
+    this.company=company;
+    return this;
+  }
+
+  public ContactData withAddress(String address) {
+    this.address=address;
+    return this;
+  }
+
+  public ContactData withHome(String home) {
+    this.home=home;
+    return this;
+  }
+
+  public ContactData withMobile(String mobile) {
+    this.mobile=mobile;
+    return this;
+  }
+
+  public ContactData withWork(String work) {
+    this.work=work;
+    return this;
+  }
+
+  public ContactData withFax(String fax) {
+    this.fax=fax;
+    return this;
+  }
+
+  public ContactData withAddress2(String address2) {
+    this.address2=address2;
+    return this;
+  }
+
+  public ContactData withPhone2(String phone2) {
+    this.phone2=phone2;
+    return this;
+  }
+
+  public ContactData withNotes(String notes) {
+    this.notes=notes;
+    return this;
+  }
+  private int id = Integer.MAX_VALUE;
+  private String firstname;
+  private String middlename;
+  private String lastname;
+  private String nickname;
+  private String company;
+  private String address;
+  private String home;
+  private String mobile;
+  private String work;
+  private String fax;
+  private String ayear;
+  private String address2;
+  private String phone2;
+  private String notes;
 
   public int getId() {
     return id;
   }
-
+/*
   public ContactData(int id, String firstname, String middlename, String lastname, String nickname, String company, String address, String home, String mobile, String work, String fax, String ayear, String address2, String phone2, String notes) {
 
     this.id = id;
@@ -50,7 +120,7 @@ public class ContactData {
     this.phone2 = phone2;
     this.notes = notes;
   }
-
+*/
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -69,7 +139,7 @@ public class ContactData {
     return result;
   }
 
-  public ContactData(String firstname, String middlename, String lastname, String nickname, String company, String address, String home, String mobile, String work, String fax, String ayear, String address2, String phone2, String notes) {
+  /*public ContactData(String firstname, String middlename, String lastname, String nickname, String company, String address, String home, String mobile, String work, String fax, String ayear, String address2, String phone2, String notes) {
 
     this.id = Integer.MAX_VALUE;
     this.firstname = firstname;
@@ -89,7 +159,7 @@ public class ContactData {
     this.notes = notes;
   }
 
-
+*/
   public String getFirstname() {
     return firstname;
   }
