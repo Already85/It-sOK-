@@ -9,9 +9,7 @@ public class ContactData {
 
   public ContactData withId(int id)
   {
-    this.id=id;
-  return this;
-  }
+    this.id=id;return this; }
 
   public ContactData withAyear(String ayear) {
     this.ayear=ayear;
@@ -48,18 +46,18 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withHome(String home) {
-    this.home=home;
+  public ContactData withHomePhone(String homePhone) {
+    this.homePhone=homePhone;
     return this;
   }
 
-  public ContactData withMobile(String mobile) {
-    this.mobile=mobile;
+  public ContactData withMobilePhone(String mobilePhone) {
+    this.mobilePhone=mobilePhone;
     return this;
   }
 
-  public ContactData withWork(String work) {
-    this.work=work;
+  public ContactData withWorkPhone(String workPhone) {
+    this.workPhone=workPhone;
     return this;
   }
 
@@ -82,25 +80,55 @@ public class ContactData {
     this.notes=notes;
     return this;
   }
-  private int id = Integer.MAX_VALUE;
+  public ContactData withEmail2(String Email2) {
+    this.email2=Email2;
+    return this;
+  }
+  public ContactData withEmail(String Email) {
+    this.email=Email;
+    return this;
+  }
+  public ContactData withEmail3(String Email3) {
+    this.email3=Email3;
+    return this;
+  }
+  public ContactData withAllEmail(String allEmail) {
+    this.allEmail=allEmail;
+    return this;
+  }
+  public ContactData withAllPhones(String allPhones) {
+    this.allPhones=allPhones;
+    return this;
+  }
+  public ContactData withAllAddress(String allAddress) {
+    this.allAddress=allAddress;
+    return this;
+  }
+
+  private int id /*= Integer.MAX_VALUE*/;
   private String firstname;
   private String middlename;
   private String lastname;
   private String nickname;
   private String company;
   private String address;
-  private String home;
-  private String mobile;
-  private String work;
+  private String homePhone;
+  private String mobilePhone;
+  private String workPhone;
   private String fax;
   private String ayear;
   private String address2;
   private String phone2;
   private String notes;
+  private String group;
+  private String allPhones;
+  private String email;
+  private String email2;
+  private String email3;
+  private String allEmail;
+  private String allAddress;
 
-  public int getId() {
-    return id;
-  }
+  public void setId(int id) { this.id=id; }
 
   @Override
   public boolean equals(Object o) {
@@ -146,18 +174,6 @@ public class ContactData {
     return address;
   }
 
-  public String getHome() {
-    return home;
-  }
-
-  public String getMobile() {
-    return mobile;
-  }
-
-  public String getWork() {
-    return work;
-  }
-
   public String getFax() {
     return fax;
   }
@@ -177,4 +193,32 @@ public class ContactData {
   public String getNotes() {
     return notes;
   }
+
+  public String getHomePhone() {
+    return homePhone;
+  }
+
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getWorkPhone() {
+    return workPhone;
+  }
+
+  public String getEmail2() { return email2; }
+
+  public String getEmail() { return email; }
+
+  public String getEmail3() { return email3; }
+
+  public String getAllEmail() { return allEmail; }
+
+  public String getAllPhones() { return allPhones; }
+
+  public int getId() {
+    return id;
+  }
+
+  public String getAllAddress() { return allAddress; }
 }
