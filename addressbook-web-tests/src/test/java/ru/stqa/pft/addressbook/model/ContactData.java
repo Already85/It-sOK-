@@ -1,10 +1,42 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
+import java.io.File;
+
+@XStreamAlias("contact")
 public class ContactData {
+
+  @XStreamOmitField
+
+  private int id /*= Integer.MAX_VALUE*/;
+  private String firstname;
+  private String middlename;
+  private String lastname;
+  private String nickname;
+  private String company;
+  private String address;
+  private String homePhone;
+  private String mobilePhone;
+  private String workPhone;
+  private String fax;
+  private String ayear;
+  private String address2;
+  private String phone2;
+  private String notes;
+  private String group;
+  private String allPhones;
+  private String email;
+  private String email2;
+  private String email3;
+  private String allEmail;
+  private String allAddress;
+  private File photo;
 
   @Override
   public String toString() {
-    return "ContactData{" + "id='" + id + '\'' + ", lastname='" + lastname + '\'' + ", address='" + address + '\'' +'}';
+    return "ContactData{" + "id='" + id + '\'' + ", firstname='" + firstname + '\'' + ", lastname='" + lastname + '\'' + ", address='" + address + '\'' +'}';
   }
 
   public ContactData withId(int id)
@@ -104,29 +136,12 @@ public class ContactData {
     this.allAddress=allAddress;
     return this;
   }
+  public ContactData withPhoto(File photo) {
+    this.photo=photo;
+    return this;
+  }
 
-  private int id /*= Integer.MAX_VALUE*/;
-  private String firstname;
-  private String middlename;
-  private String lastname;
-  private String nickname;
-  private String company;
-  private String address;
-  private String homePhone;
-  private String mobilePhone;
-  private String workPhone;
-  private String fax;
-  private String ayear;
-  private String address2;
-  private String phone2;
-  private String notes;
-  private String group;
-  private String allPhones;
-  private String email;
-  private String email2;
-  private String email3;
-  private String allEmail;
-  private String allAddress;
+
 
   public void setId(int id) { this.id=id; }
 
@@ -221,4 +236,10 @@ public class ContactData {
   }
 
   public String getAllAddress() { return allAddress; }
+
+  public File getPhoto() { return photo; }
+
+  public String getGroup() {
+    return group;
+  }
 }

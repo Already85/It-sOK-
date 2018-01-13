@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
 
@@ -15,7 +16,7 @@ public class TestBase {
     app.init();
   }
 
-  @AfterMethod
+  @AfterSuite
   public void tearDown() {
     app.stop();
   }

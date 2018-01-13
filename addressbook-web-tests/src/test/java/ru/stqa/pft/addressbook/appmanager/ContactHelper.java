@@ -4,9 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
-import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.HashSet;
 import java.util.List;
@@ -19,32 +20,22 @@ public class ContactHelper extends HelperBase {
     super(wd);
   }
 
-  public void fillContactForm(ContactData contactData) {
-    type(By.name("firstname"), contactData.getFirstname());
-    type(By.name("middlename"), contactData.getMiddlename());
-    type(By.name("lastname"), contactData.getLastname());
-    type(By.name("nickname"), contactData.getNickname());
-    type(By.name("company"), contactData.getCompany());
-    type(By.name("address"), contactData.getAddress());
-    type(By.name("home"), contactData.getHomePhone());
-    type(By.name("mobile"), contactData.getMobilePhone());
-    type(By.name("work"), contactData.getWorkPhone());
-    type(By.name("fax"), contactData.getFax());
-    if (!wd.findElement(By.xpath("//div[@id='content']/form/select[3]//option[29]")).isSelected()) {
-      click(By.xpath("//div[@id='content']/form/select[3]//option[29]"));
-    }
-    if (!wd.findElement(By.xpath("//div[@id='content']/form/select[4]//option[7]")).isSelected()) {
-      click(By.xpath("//div[@id='content']/form/select[4]//option[7]"));
-    }
-    type(By.name("ayear"), contactData.getAyear());
-    type(By.name("address2"), contactData.getAddress2());
-    type(By.name("phone2"), contactData.getPhone2());
-    type(By.name("notes"), contactData.getNotes());
-    type(By.name("email"), contactData.getEmail());
-    type(By.name("email2"), contactData.getEmail2());
-    type(By.name("email3"), contactData.getEmail3());
+  public void initContactCreation() { click(By.linkText("add new"));
   }
 
+  public void fillContactForm(ContactData contactData,boolean creation) {
+    type(By.name("firstname"), contactData.getFirstname());
+    type(By.name("lastname"), contactData.getLastname());
+    type(By.name("address"), contactData.getAddress());
+    attach(By.name("photo"), contactData.getPhoto());
+    if (creation) {
+      if (contactData.getGroup() != null) {
+        new Select(wd.findElement(By.name("new contact"))).selectByVisibleText(contactData.getGroup());
+      }
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new contact")));
+    }
+  }
   private boolean isElementPresent(By locator) {
     try {
       wd.findElement(locator);
@@ -80,13 +71,13 @@ public class ContactHelper extends HelperBase {
 
 
   public void create(ContactData contact) {
-    fillContactForm(contact);
+    fillContactForm(contact,true);
     clickButtonEnter();
   }
 
   public void modify(ContactData contact) {
     initContactModificationById(contact.getId());
-    fillContactForm(contact);
+    fillContactForm(contact,true);
     submitContactModification();
   }
 
@@ -146,7 +137,8 @@ public class ContactHelper extends HelperBase {
     String Email3=wd.findElement(By.name("email3")).getAttribute("value");
     String Address=wd.findElement(By.name("address")).getAttribute("value");
     wd.navigate().back();
-    return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname).withHomePhone(homePhone).withMobilePhone(mobilePhone).withWorkPhone(workPhone).withEmail(Email).withEmail2(Email2).withEmail3(Email3).withAddress(Address);
+    return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname).withHomePhone(homePhone)
+            .withMobilePhone(mobilePhone).withWorkPhone(workPhone).withEmail(Email).withEmail2(Email2).withEmail3(Email3).withAddress(Address);
   }
 
   private void initContactModificationById(int id) {
@@ -155,5 +147,7 @@ public class ContactHelper extends HelperBase {
     List<WebElement> cells=row.findElements(By.tagName("td"));
     cells.get(7).findElement(By.tagName("a")).click();
   }
+  public void submitContactCreation() { click(By.name("submit")); }
 
+public void returnToHomePage() {click(By.linkText("home page")); }
 }
