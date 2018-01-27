@@ -22,12 +22,7 @@ public class ApplicationManager {
   private final Properties properties;
   WebDriver wd;
 
-  private NavigationHelper navigationHelper;
-  private ContactHelper contactHelper;
-  private SessionHelper sessionHelper;
-  private GroupHelper groupHelper;
   private String browser;
-  private DbHelper dbHelper;
 
   public ApplicationManager(String browser) {
     this.browser=browser;
@@ -37,8 +32,6 @@ public class ApplicationManager {
   public void init() throws IOException {
     String target=System.getProperty("target","local");
     properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties",target))));
-
-    dbHelper = new DbHelper();
 
     if (browser.equals(BrowserType.FIREFOX)) {
       wd=new FirefoxDriver(/*new FirefoxOptions().setLegacy(true)*/);
@@ -52,14 +45,7 @@ public class ApplicationManager {
       wd=new OperaDriver(options);}
       wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       wd.get(properties.getProperty("web.baseUrl"));
-      groupHelper=new GroupHelper(wd);
-      contactHelper=new ContactHelper(wd);
-      navigationHelper=new NavigationHelper(wd);
-      sessionHelper=new SessionHelper(wd);
-      sessionHelper.login(properties.getProperty("web.adminLogin"),properties.getProperty("web.adminPassword"));
-
-
-    }
+  }
 
 
   private void login(String username, String password) {
@@ -76,20 +62,6 @@ public class ApplicationManager {
     wd.quit();
   }
 
-  public ContactHelper contact() {
-    return contactHelper;
-  }
-
-  public GroupHelper group() {
-    return groupHelper;
-  }
-
-  public NavigationHelper goTo() {
-    return navigationHelper;
-  }
-
-  public DbHelper db() {
-    return dbHelper;
-  }
+ 
 
 }
