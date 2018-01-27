@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.HashSet;
 import java.util.List;
@@ -29,17 +31,25 @@ public class ContactHelper extends HelperBase {
     type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("nickname"), contactData.getNickname());
     type(By.name("address"), contactData.getAddress());
-    type(By.name("email"), contactData.getEmail());
+    /*type(By.name("email"), contactData.getEmail());
     type(By.name("email2"), contactData.getEmail2());
     type(By.name("email3"), contactData.getEmail3());
     type(By.name("home"), contactData.getHomePhone());
     type(By.name("work"), contactData.getWorkPhone());
     type(By.name("mobile"), contactData.getMobilePhone());
+    type(By.name("company"), contactData.getCompany());
+    type(By.name("fax"), contactData.getFax());
+    type(By.name("ayear"), contactData.getAyear());
+    type(By.name("address2"), contactData.getAddress2());
+    type(By.name("phone2"), contactData.getPhone2());
+    type(By.name("notes"), contactData.getNotes());
 
-    /*attach(By.name("photo"), contactData.getPhoto());*/
+
+    attach(By.name("photo"), contactData.getPhoto());*/
     if (creation) {
-      if (contactData.getGroup() != null) {
-        new Select(wd.findElement(By.name("new contact"))).selectByVisibleText(contactData.getGroup());
+     if (contactData.getGroups().size() > 0) {
+       Assert.assertTrue(contactData.getGroups().size() == 1);
+       new Select(wd.findElement(By.name("new contact"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
       }
     } else {
       Assert.assertFalse(isElementPresent(By.name("new contact")));
@@ -129,7 +139,8 @@ public class ContactHelper extends HelperBase {
       String address=cells.get(3).getText();
       String allEmail=cells.get(4).getText();
       String allPhones=cells.get(5).getText();
-      contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address).withAllEmail(allEmail).withAllPhones(allPhones));
+      contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address)
+              .withAllEmail(allEmail).withAllPhones(allPhones));
     }
     return contacts;
   }
@@ -159,4 +170,21 @@ public class ContactHelper extends HelperBase {
   public void submitContactCreation() { click(By.name("submit")); }
 
 public void returnToHomePage() {click(By.linkText("home page")); }
-}
+
+  public int count() {return wd.findElements(By.name("selected[]")).size(); }
+
+  private Groups groupCache = null;
+
+  public Groups al() {
+    if (groupCache != null) {
+      return new Groups(groupCache);
+    }
+    groupCache = new Groups();
+    List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
+    for(WebElement element: elements) {
+      String name=element.getText();
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      groupCache.add(new GroupData().withId(id).withName(name));
+    }
+    return new Groups(groupCache);
+  }}

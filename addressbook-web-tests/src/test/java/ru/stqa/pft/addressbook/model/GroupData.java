@@ -5,10 +5,9 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @XStreamAlias("group")
@@ -28,6 +27,20 @@ private int id = Integer.MAX_VALUE;
   @Column(name="group_header")
   @Type(type="text")
   private String header;
+
+  @Expose
+  @Column(name="group_footer")
+  @Type(type="text")
+  private String footer;
+
+  @ManyToMany(mappedBy = "groups")
+  private Set<ContactData> contacts = new HashSet<ContactData>();
+
+  public Set<ContactData> getContacts()
+  {new Contacts();
+  return contacts; }
+
+  public int getId() { return id; }
 
   @Override
   public boolean equals(Object o) {
@@ -50,11 +63,6 @@ private int id = Integer.MAX_VALUE;
     result=31 * result + (footer != null ? footer.hashCode() : 0);
     return result;
   }
-
-  @Expose
-  @Column(name="group_footer")
-  @Type(type="text")
-  private String footer;
 
   public GroupData withHeader(String header) {
     this.header=header;
@@ -81,10 +89,6 @@ private int id = Integer.MAX_VALUE;
     return "GroupData{" + "id='" + id + '\'' + ", name='" + name + '\'' +'}';
   }
 
-  public int getId() {
-    return id;
-  }
-
   public String getName() {
     return name;
   }
@@ -96,5 +100,6 @@ private int id = Integer.MAX_VALUE;
   public String getFooter() {
     return footer;
   }
+
 
 }
