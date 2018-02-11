@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.sandbox.DistanceTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-02-11T23:08:08" hostname="Alexandr-PC" time="0.014">
+  <properties/>
+  <testcase name="testDistance" classname="ru.stqa.pft.sandbox.DistanceTests" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
