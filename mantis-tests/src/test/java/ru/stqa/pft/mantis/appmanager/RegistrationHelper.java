@@ -22,3 +22,8 @@ public class RegistrationHelper extends HelperBase{
     click(By.cssSelector("input[value='Update User']"));
   }
 }
+
+/*public void modification(String username, String email){
+  wd.get(app.getProperty("web.baseUrl") + "/login_page.php?return=index.php&error=1&username=&secure_session=1&perm_login=0");
+  type()
+}*/

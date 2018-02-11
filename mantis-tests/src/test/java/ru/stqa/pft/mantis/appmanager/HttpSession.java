@@ -52,6 +52,11 @@ public boolean isLoggedInAs(String username) throws IOException{
   return body.contains(String.format("<span class=\"italic\">%s</span>", username));
 }
 
-
+public boolean as(String username) throws IOException {
+  HttpGet get=new HttpGet(app.getProperty("web.baseUrl") + "/manage_user_page.php");
+  CloseableHttpResponse response=httpclient.execute(get);
+  String body = geTextFrom(response);
+  return body.contains(String.format("<span class=\"italic\">%s</span>", username));
+}
 
 }
