@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 
 public class ContactModificationTests extends TestBase {
 
-  @BeforeMethod
+  /*@BeforeMethod
   public void ensurePreconditions() {
     if (app.db().contacts().size()==0) {
       app.goTo().addNew();
@@ -21,7 +21,7 @@ public class ContactModificationTests extends TestBase {
               .withNickname("Kaledo").withAddress("Mars").withEmail("Kaledo05@gmail.com").withEmail2("Kaledo28@gmail.com")
               .withEmail3("dr.t-storm@rambler.ru").withHomePhone("+7(911)88888").withMobilePhone("99 888 7777" ).withWorkPhone("22-33"));
     }
-  }
+  }*/
   @Test
 
   public void ContactTestModification() {
