@@ -35,7 +35,7 @@ public class ContactModificationTests extends TestBase {
             .withFax("122-1").withAyear("1985").withAddress2("BPS").withPhone2("333-333").withNotes("48484").withPhoto(photo);
     app.contact().modify(contact);
     Contacts after = app.db().contacts();
-    /*assertEquals(after.size(),before.size());*/
+    assertEquals(after.size(),before.size());
     assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
     verifyContactListInUI();
   }
