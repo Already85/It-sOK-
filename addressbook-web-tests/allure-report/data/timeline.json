@@ -1,0 +1,42 @@
+{
+  "hosts" : [ {
+    "title" : "default",
+    "threads" : [ {
+      "title" : "default",
+      "testCases" : [ {
+        "uid" : "4b0fa4b84417d5c1",
+        "name" : "GroupTestModification",
+        "title" : "Group test modification",
+        "time" : {
+          "start" : 1518524807565,
+          "stop" : 1518524809841,
+          "duration" : 2276
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "7e8688fbdde513c1",
+        "name" : "GroupTestModification",
+        "title" : "Group test modification",
+        "time" : {
+          "start" : 1518539071806,
+          "stop" : 1518539073377,
+          "duration" : 1571
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "204fbe8a61cced1",
+        "name" : "GroupTestModification",
+        "title" : "Group test modification",
+        "time" : {
+          "start" : 1518521142649,
+          "stop" : 1518521144466,
+          "duration" : 1817
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

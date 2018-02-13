@@ -2,61 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f4d19bd-6438-4005-84a4-a31e5967e566" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_2_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_fastinfoset_FastInfoset_1_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_beanutils_commons_beanutils_core_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jsr173_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tika_tika_core_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjrt_1_7_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jvnet_jaxb2_commons_jaxb2_basics_runtime_0_6_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_simple_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ru_yandex_qatools_allure_allure_java_annotations_1_4_0_RC4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ru_yandex_qatools_allure_allure_java_aspects_1_4_0_RC4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ru_yandex_qatools_allure_allure_java_commons_1_4_0_RC4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ru_yandex_qatools_allure_allure_model_1_4_0_RC4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ru_yandex_qatools_allure_allure_testng_adaptor_1_4_0_RC4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ru_yandex_qatools_properties_properties_loader_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/MyTestListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/allure.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/fileContent/annotation-processors.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/fileContent/fileContent.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/jvmClassSignatures.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/jvmClassSignatures.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/appmanager/ContactHelper.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/appmanager/ContactHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/ContactData.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/ContactData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/Contacts.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/Contacts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/GroupData.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/GroupData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/Groups.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/model/Groups.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/ContactCreationTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/ContactCreationTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/ContactDeletionTest.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/ContactDeletionTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/ContactModificationTests.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/ContactModificationTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/GroupCreationTests.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/GroupCreationTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/GroupDeletionTests.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/GroupDeletionTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/GroupModificationTests.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/GroupModificationTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/TestBase.class" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/test/ru/stqa/pft/addressbook/tests/TestBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/local.properties" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/logback.xml" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/testng-groups.xml" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/testng-groups.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
     <ignored path="$PROJECT_DIR$/sandbox/build/" />
@@ -129,8 +87,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="56">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,22 +97,20 @@
       <file leaf-file-name="MyTestListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/MyTestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="362">
               <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allure.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allure.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/allure.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="45" />
+              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -180,21 +136,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GroupModificationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DistanceTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -770,7 +726,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="1518520996364" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="1518538850580" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="3172548982" />
         <entry key="$PROJECT_DIR$/mantis-tests" value="3030134832632" />
         <entry key="$PROJECT_DIR$/mantis-tests/build.gradle" value="992551908" />
@@ -1113,14 +1069,14 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" />
         <option value="$PROJECT_DIR$/sandbox/src/test/resources/DistanceTests.xml" />
-        <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/allure.properties" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/MyTestListener.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
+        <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java" />
       </list>
     </option>
   </component>
@@ -2036,16 +1992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -2112,26 +2058,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -2144,18 +2074,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3307#3308#0" expanded="true" />
             <element signature="e#3379#3380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/MyTestListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2174,7 +2092,41 @@
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/allure.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="45" />
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/MyTestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/tests/DistanceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>

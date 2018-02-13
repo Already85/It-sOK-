@@ -1,0 +1,60 @@
+{
+  "time" : {
+    "start" : 1518521142649,
+    "stop" : 1518539073377,
+    "duration" : 17930728
+  },
+  "testSuites" : [ {
+    "uid" : "77988eb60b593257",
+    "name" : "Suite1",
+    "title" : "Suite 1",
+    "time" : {
+      "start" : 1518521142649,
+      "stop" : 1518539073377,
+      "duration" : 17930728
+    },
+    "statistic" : {
+      "total" : 3,
+      "passed" : 3,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "4b0fa4b84417d5c1",
+      "name" : "GroupTestModification",
+      "title" : "Group test modification",
+      "time" : {
+        "start" : 1518524807565,
+        "stop" : 1518524809841,
+        "duration" : 2276
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7e8688fbdde513c1",
+      "name" : "GroupTestModification",
+      "title" : "Group test modification",
+      "time" : {
+        "start" : 1518539071806,
+        "stop" : 1518539073377,
+        "duration" : 1571
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "204fbe8a61cced1",
+      "name" : "GroupTestModification",
+      "title" : "Group test modification",
+      "time" : {
+        "start" : 1518521142649,
+        "stop" : 1518521144466,
+        "duration" : 1817
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

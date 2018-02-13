@@ -23,6 +23,7 @@ dependencies {
     testCompile "ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4"
 }
 
+
 task testGroups(type:Test){
     useTestNG {
         suites 'src/test/resources/testng-groups.xml'
